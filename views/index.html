@@ -13,6 +13,7 @@
         <div class="logo">
             <img src="https://i.postimg.cc/qRG6WhDy/Notes-icon-10.png" alt="notas">
             <h2>Bloc de notas</h2>
+            <h4>Este será el encabezado de la página</h4>
         </div>
         <nav>
             <a href="" class="nav-link">Inicio</a>
@@ -21,4 +22,47 @@
         </nav>
     </header>
 </body>
+
+<section id="contenedor" class="container">
+    <div class="centro">
+        <h3>Acá iran los botones con una barra de color</h3>
+        <div class="abrir nuevo">
+        <button class="btn-1" onclick="cambiarDisplayNuevo()">Crear una nota</button>
+        <button class="btn-1" onclick="cambiarDisplayNuevo()">Todas las notas</button>
+        <button class="btn-1" onclick="cambiarDisplayNuevo()">Importar una nota</button>
+        <button class="btn-1" onclick="cambiarDisplayNuevo()">Papelera</button>
+    </div>
+</section>
+<br>
+<br>
+<section id="formulario" class="container">
+    <a href="/" class="btn-1 home">
+        <i class="fas fa-home"></i>
+    </a>
+<div class="centro">
+    <form method="GET" onsubmit="return guardar()" >
+        <input autofocus required title="Este campo es obligatorio" type="text" placeholder="Titulo" id="titulo"/>
+      <textarea placeholder="Escribe un mensaje" id="textarea" ></textarea>
+      <button class="guardar" type="submit" value="Guardar">Guardar</button>
+    </form>
+  </div>
+</section>
+</div>
+<footer>
+    <div class="footer-creds">
+        <div class="copy-creds">
+            <p>©2023.Todos los derechos reservados</p>
+            <h3>este es el pie de la pagina<h3>
+        </div>
+    </div>
+    <div class="legal-creds">
+        <ul>
+            <li><a href="/politica-privacidad">Política de Privacidad</a></li>
+            <li><a href="/politica-cookies">Política de Cookies</a></li>
+            <li><a href="/aviso-legal">Aviso Legal</a></li>
+            <button>Enviar comentaerios</button>
+    </ul>
+  </div>
+</div>
+</footer>
 </html>
