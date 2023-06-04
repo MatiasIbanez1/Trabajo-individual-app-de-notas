@@ -12,6 +12,7 @@ body{
     margin: 0px;
     background-color: aquamarine;
 
+
 }
 header{
     display: flex;
@@ -39,10 +40,11 @@ nav a{
 button{
     font-size: larger;
     font-family: sans-serif;
+    align-items: center;
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px black;
-    background-color: rgba(35, 78, 196, 0.815);
+    background-color: rgba(57, 88, 172, 0.815);
     color: white;
 
 }
@@ -67,4 +69,8 @@ form{
     font-size: large;
     display: flex;
     flex-direction: column;
+}
+
+section{
+  background-color: rgb(100, 143, 184);
 }
