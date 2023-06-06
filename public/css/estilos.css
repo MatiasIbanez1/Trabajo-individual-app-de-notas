@@ -73,13 +73,19 @@ form{
 
 section{
   background-color: rgb(39, 95, 148);
+  padding: 1%;
 }
 a.button{
     font-size: medium;
-    padding: 5px 10px;
+    padding: 9px 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 6px black;
     background-color: rgba(57, 88, 172, 0.815);
     color: white;
 
+}
+
+.container{
+    color: rgb(253, 255, 127);
+    text-align: center;
 }
