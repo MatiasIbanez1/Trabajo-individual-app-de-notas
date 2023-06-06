@@ -36,31 +36,28 @@
 <section id="contenedor" class="container">
     <div class="centro">
         <div class="abrir nuevo">
-        <button class="btn-1" onclick="cambiarDisplayNuevo()">Crear una nota</button>
         <button class="btn-1" onclick="cambiarDisplayNuevo()">Todas las notas</button>
         <button class="btn-1" onclick="cambiarDisplayNuevo()">Importar una nota</button>
         <button class="btn-1" onclick="cambiarDisplayNuevo()">Papelera</button>
-        <a href="http://google.com" class="button">Go to Google</a>
+        <a href="https://calendar.google.com/calendar/" class="button">Agenda</a>
     </div>
 </section>
 <br>
 <br>
 
-<section id="formulario" class="container">
-    <a href="/" class="btn-1 home">
-        <i class="fas fa-home"></i>
-    </a>
 <div class="centro">
     <form method="GET" onsubmit="return guardar()" >
         <input autofocus required title="Este campo es obligatorio" type="text" placeholder="Titulo" id="titulo"/>
-      <br>
-        <textarea placeholder="Escribe un mensaje" id="textarea" ></textarea>
-      <button class="guardar" type="submit" value="Guardar">Guardar</button>
-
-    </form>
-  </div>
-</section>
+        </form>
 </div>
+
+<form action="../../form-result.php" target="_blank">
+    <p>Agregar una descripción:</p>
+    <p><textarea name="descripcion" cols="40" rows="5"></textarea></p>
+    <button class="guardar" type="submit" value="Guardar">Guardar</button>
+  </form>
+
+
 
 <footer>
     <div class="footer-creds">
