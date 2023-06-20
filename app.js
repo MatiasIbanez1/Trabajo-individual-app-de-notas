@@ -2,7 +2,7 @@ const path = require('path')
 const express = require("express")
 const app = express()
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3002
 
 app.use(express.static('public'));
 
@@ -11,6 +11,9 @@ app.get('/', function (req, res) {
 })
 app.get('/login', function (req, res) {
     res.sendFile(path.join(__dirname, 'views/login.html'))
+})
+app.get('', function (req, res) {
+    res.sendFile(path.join(__dirname,"views/mis-notas.html"))
 })
 
 app.listen(PORT, () => 
