@@ -1,7 +1,16 @@
-const express = require('express')
-const mainRouter = express.Router()
-const mainController = require('../controller/mainController')
+const express = require('express');
+const router = express.Router();
+const mainControllers = require('../controllers/mainControllers.js');
 
-mainRouter.get('/',mainController.index)
+mainRoutes.get("/",mainController.index)
+mainRoutes.get("/login",mainController.login)
+mainRoutes.get("/mis-notas",mainController.mis-notas)
 
-module.exports = mainRouter
+router.get('/', (req,res) =>
+{
+});
+router.get('/detalle/:id',(req,res)=>{
+
+});
+
+module.exports = router;
