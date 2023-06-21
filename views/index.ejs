@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+<body>
+
+
+    <%- include('./partials/header') %>
+
+    
+    <% for(let index=0; index < note.length; index++) { %>
+        <h4><%= note[index].titulo %></h4>
+          <%= note[index].description %>
+<% } %>
+
+<h3> prueba</h3>
+    
+</body>
+
+<br>
+<br>
+
+<section id="contenedor" class="container">
+    <div class="centro">
+        <div class="abrir nuevo">
+        <a href="/mis-notas" class="button">Mis notas</a>
+        <a href="" class="button">Crear una nota</a>
+        <a href="" class="button">Papelera</a>
+        <a href="https://calendar.google.com/calendar/" class="button">Calendario</a>
+    </div>
+</section>
+<br>
+<br>
+
+<div class="centro">
+    <form method="GET" onsubmit="return guardar()" >
+        <input autofocus required title="Este campo es obligatorio" type="text" placeholder="Titulo" id="titulo"/>
+        </form>
+</div>
+
+<form action="../../form-result.php" target="_blank">
+    <p>Agregar una descripción:</p>
+    <p><textarea name="descripcion" cols="40" rows="5"></textarea></p>
+    <button class="guardar" type="submit" value="Guardar">Guardar</button>
+  </form>
+  <br>
+</html>
+
