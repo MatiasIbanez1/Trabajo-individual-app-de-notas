@@ -5,13 +5,13 @@
 
 <body>
 
-
-    <%- include('./partials/header') %>
-
     
-    <% for(let index=0; index < note.length; index++) { %>
-        <h4><%= note[index].titulo %></h4>
-          <%= note[index].description %>
+
+ <%- include('./partials/header') %>
+
+    <% for(let index=0; index < noteList.length; index++) { %>
+        <h4><%= noteList[index].titulo %></h4>
+          <%= noteList[index].description %>
 <% } %>
 
 <h3> prueba</h3>
@@ -46,4 +46,3 @@
   </form>
   <br>
 </html>
-
